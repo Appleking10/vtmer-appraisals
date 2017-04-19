@@ -14,7 +14,7 @@
 //链接为：http：//vtmer.cn/search=白夜行
 /*********************/
 //用户名登录表单验证：
-//账号(name)都是英文
+//账号(name)都是英文 
 //密码(password)都是数字，且长度为6-10
  Mock.mock('http://vtmer.cn/login', {
      'user|9':[{
@@ -22,6 +22,7 @@
           	password:'@string(lower+number,6,10)'
           }]         
      });
+
 
 Mock.mock('http://vtmer.cn/class', {
 			// 书的大分类
